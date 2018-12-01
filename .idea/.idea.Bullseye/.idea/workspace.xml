@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="99541ba3-383c-4642-bc10-0ff9889665e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Bullseye/Internal/IEnumerableExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bullseye/Internal/EnumerableExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bullseye/Internal/Palette.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bullseye/Internal/Palette.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bullseye/Internal/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bullseye/Internal/Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bullseye/Internal/TargetCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bullseye/Internal/TargetCollection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bullseye/Internal/TargetCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bullseye/Internal/TargetCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bullseye/Targets.Sync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bullseye/Targets.Sync.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BullseyeSmokeTester/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BullseyeSmokeTester/Program.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1794251874">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="53" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="53" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="15" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bullseye/Targets.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+              <folding>
+                <marker date="1541018838652" expanded="true" signature="18:1115" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="31:139" ph="..." />
+                <marker date="1541018838652" expanded="true" signature="180:1113" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BullseyeTests/Dependencies.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <marker date="1541018838652" expanded="true" signature="23:12431" ph="{...}" />
+                <marker date="1541018838652" expanded="false" signature="36:250" ph="..." />
+                <marker date="1541018838652" expanded="true" signature="281:12429" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="408:1469" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="1593:2688" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="2810:3635" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="3737:4317" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="4421:5175" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="5281:6196" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="6328:7453" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="7598:8937" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="9063:9842" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="9975:10845" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="11115:12423" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="11309:11520" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.nuget/packages/publicapigenerator/8.0.1/contentFiles/cs/any/PublicApiGenerator/ApiGenerator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="403" column="40" selection-start-line="403" selection-start-column="40" selection-end-line="403" selection-end-column="40" />
+              <folding>
+                <marker date="1537679494000" expanded="false" signature="6:439" ph="..." />
+                <marker date="1537679494000" expanded="true" signature="524:41629" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="563:41305" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="876:2249" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="1145:2239" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="1626:1748" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="1750:2225" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="2318:2602" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="2419:2478" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="2612:2739" ph="/* TODO: Assembly references? ... */" />
+                <marker date="1537679494000" expanded="true" signature="2975:4962" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="3101:3279" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="3341:4875" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="3497:3646" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="3924:4536" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="4146:4332" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="4593:4861" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="5020:5122" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="5181:5311" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="5368:5488" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="5589:5736" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="5798:5956" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="6056:6386" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="6560:7567" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="6679:6982" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="7037:7180" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="7232:7368" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="7420:7557" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="7634:9283" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="9442:13349" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="10250:10386" ph="/* Static support is a hack. CodeDOM does support it, and this isn't ... */" />
+                <marker date="1537679494000" expanded="true" signature="10650:11148" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="11478:11959" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="11559:11831" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="13086:13306" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="13473:14969" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="13797:14035" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="14594:14926" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="15038:15180" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="15305:16829" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="15383:16819" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="15582:15755" ph="/* A little hacky. Means we get &quot;in&quot; and &quot;out&quot; prefixed on any constraints, but it's either that ... */" />
+                <marker date="1537679494000" expanded="true" signature="16053:16233" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="16617:16758" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="16981:17178" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="17361:17468" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="17724:18136" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="17954:18126" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="18304:19163" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="18516:18646" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="18725:18878" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="18964:19123" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="19418:20275" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="19488:20265" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="19570:19725" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="19916:20035" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="20092:20251" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="20366:21734" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="21841:22091" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="22193:25378" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="22271:22402" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="22473:22798" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="22987:24742" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="23166:24301" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="23205:23848" ph="/* var allFlags = from f in type.Fields ... */" />
+                <marker date="1537679494000" expanded="true" signature="24817:24941" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="24975:25312" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="25006:25151" ph="/* CodeDOM outputs a verbatim string. Any string with \n is treated as such, so normalise ... */" />
+                <marker date="1537679494000" expanded="true" signature="25521:26008" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="25669:25863" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="26119:26978" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="27124:28307" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="27504:27579" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="27713:27948" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="28379:28534" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="28759:30066" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="28826:30056" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="29380:29523" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="29843:29997" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="30142:30321" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="30399:31515" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="31576:32481" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="31655:31791" ph="/* If we're an interface, just try and find any method with the same signature ... */" />
+                <marker date="1537679494000" expanded="true" signature="31835:32256" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="32559:32905" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="32648:32895" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="33054:35393" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="33769:34185" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="34200:34323" ph="/* Here's a nice hack, because hey, guess what, the CodeDOM doesn't support ... */" />
+                <marker date="1537679494000" expanded="true" signature="34405:34586" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="34668:34849" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="34907:35127" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="35141:35331" ph="/* TODO: CodeDOM has no support for different access modifiers for getters and setters ... */" />
+                <marker date="1537679494000" expanded="true" signature="35518:37475" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="37550:37794" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="37907:38322" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="37975:38283" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="38469:39725" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="39390:39535" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="39805:39896" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="40004:40186" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="40264:40412" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="40467:40800" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="40585:40719" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="40879:41299" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="41141:41242" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="41331:41627" ph="{...}" />
+                <marker date="1537679494000" expanded="true" signature="41427:41621" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bullseye/Internal/EnumerableExtensions.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+              <folding>
+                <marker date="1543691292043" expanded="true" signature="27:320" ph="{...}" />
+                <marker date="1543691292043" expanded="false" signature="40:90" ph="..." />
+                <marker date="1543691292043" expanded="true" signature="136:318" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bullseye/Internal/OperatingSystem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <folding>
+                <marker date="1541018838652" expanded="true" signature="27:139" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="61:137" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bullseye/Internal/TargetCollection.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="68" column="66" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
+              <folding>
+                <marker date="1543692745654" expanded="true" signature="27:5798" ph="{...}" />
+                <marker date="1543692745654" expanded="false" signature="40:255" ph="..." />
+                <marker date="1543692745654" expanded="true" signature="324:5796" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="524:1874" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="661:1583" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="714:812" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="1012:1269" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="1290:1569" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="1356:1551" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="1613:1764" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="2087:3366" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="2168:2315" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="2471:2736" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="2753:3032" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="2831:3018" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="3102:3328" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="3424:4500" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="3565:4006" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="3712:3992" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="4055:4490" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="4555:4758" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="4661:4748" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="4843:5379" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="4908:5106" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="5236:5333" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="5430:5790" ph="{...}" />
+                <marker date="1543692745654" expanded="true" signature="5584:5780" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bullseye/Internal/WindowsConsole.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+              <folding>
+                <marker date="1541018838652" expanded="true" signature="27:2454" ph="{...}" />
+                <marker date="1541018838652" expanded="false" signature="40:126" ph="..." />
+                <marker date="1541018838652" expanded="true" signature="166:2452" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="273:2446" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="569:888" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="612:849" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="914:1096" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="1180:1533" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="1223:1494" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="1559:1755" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="1895:2214" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="1938:2200" ph="{...}" />
+                <marker date="1541018838652" expanded="true" signature="2240:2436" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bullseye/Internal/Palette.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+              <folding>
+                <marker date="1543692745718" expanded="true" signature="27:5279" ph="{...}" />
+                <marker date="1543692745718" expanded="true" signature="73:5277" ph="{...}" />
+                <marker date="1543692745718" expanded="true" signature="160:4636" ph="{...}" />
+                <marker date="1543692745718" expanded="true" signature="3193:4626" ph="{...}" />
+                <marker date="1543692745718" expanded="true" signature="3641:3738" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bullseye/Internal/Target.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+              <folding>
+                <marker date="1543692745638" expanded="true" signature="27:611" ph="{...}" />
+                <marker date="1543692745638" expanded="true" signature="40:124" ph="..." />
+                <marker date="1543692745638" expanded="true" signature="149:609" ph="{...}" />
+                <marker date="1543692745638" expanded="true" signature="224:402" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bullseye/Targets.Sync.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+              <folding>
+                <marker date="1543692745678" expanded="true" signature="18:960" ph="{...}" />
+                <marker date="1543692745678" expanded="false" signature="31:110" ph="..." />
+                <marker date="1543692745678" expanded="true" signature="151:958" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>this.</find>
+      <find>= this.</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>=</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Bullseye/Internal/TargetCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bullseye/Internal/ActionTarget`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bullseye/Internal/TargetCollection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bullseye/Internal/ActionTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bullseye/Internal/Target.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bullseye/Internal/Palette.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bullseye/Internal/WindowsConsole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bullseye/Internal/EnumerableExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BullseyeTests/Dependencies.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bullseye/Targets.Optionals.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BullseyeSmokeTester/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bullseye/Targets.Sync.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bullseye/Targets.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/.nuget/packages/publicapigenerator/8.0.1/contentFiles/cs/any/PublicApiGenerator/ApiGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bullseye/Internal/OperatingSystem.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/BullseyeSmokeTester/Program.cs" />
+        <option value="$PROJECT_DIR$/Bullseye/Internal/TargetCollectionExtensions.cs" />
+        <option value="$PROJECT_DIR$/Bullseye/Targets.cs" />
+        <option value="$PROJECT_DIR$/Bullseye/Internal/ActionTarget.cs" />
+        <option value="$PROJECT_DIR$/Bullseye/Internal/IEnumerableExtensions.cs" />
+        <option value="$PROJECT_DIR$/Bullseye/Internal/Target.cs" />
+        <option value="$PROJECT_DIR$/Bullseye/Internal/TargetCollection.cs" />
+        <option value="$PROJECT_DIR$/Bullseye/Targets.Sync.cs" />
+        <option value="$PROJECT_DIR$/Bullseye/Internal/Palette.cs" />
+        <option value="$PROJECT_DIR$/BullseyeTests/Dependencies.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2" />
+    <option name="y" value="39" />
+    <option name="width" value="3198" />
+    <option name="height" value="1745" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Bullseye" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Bullseye" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Bullseye" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Bullseye" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Bullseye" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Internal" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Bullseye" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="BullseyeSmokeTester" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99541ba3-383c-4642-bc10-0ff9889665e7" name="Default Changelist" comment="" />
+      <created>1543689687323</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543689687323</updated>
+      <workItem from="1543689691301" duration="3055000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3055000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2" y="0" width="3204" height="1746" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49967846" weight="0.32934132" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.5006431" side_tool="true" visible="true" weight="0.32934132" />
+      <window_info anchor="bottom" id="Build" sideWeight="0.49935693" visible="true" weight="0.32934132" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="right" id="Errors In Solution" order="0" visible="true" weight="0.32990354" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="5" weight="0.24983923" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/BullseyeSmokeTester/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1171">
+          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+          <folding>
+            <marker date="1543690215352" expanded="true" signature="29:1995" ph="{...}" />
+            <marker date="1543690215352" expanded="true" signature="42:141" ph="..." />
+            <marker date="1543690215352" expanded="true" signature="176:1993" ph="{...}" />
+            <marker date="1543690215352" expanded="true" signature="1151:1317" ph="{...}" />
+            <marker date="1543690215352" expanded="true" signature="1470:1636" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Internal/TargetCollectionExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <marker date="1543690170974" expanded="false" signature="40:207" ph="..." />
+            <marker date="1543690170974" expanded="true" signature="1311:3593" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="1357:3579" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="3295:3392" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="3421:3529" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="3636:3816" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="3840:3901" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="4031:4118" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="4190:4275" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="4345:4430" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="4503:4648" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="4875:4953" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="5060:5136" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="5909:6052" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="6203:6692" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="6727:6793" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="7075:9829" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="7280:7399" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="7556:9819" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="7608:7672" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="7762:9805" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="7933:9672" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="8406:8578" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="8627:8811" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="9032:9557" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="9177:9531" ph="{...}" />
+            <marker date="1543690170974" expanded="true" signature="9700:9787" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Targets.Optionals.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+          <folding>
+            <marker date="1543688148808" expanded="true" signature="18:1023" ph="{...}" />
+            <marker date="1543688148808" expanded="false" signature="31:110" ph="..." />
+            <marker date="1543688148808" expanded="true" signature="151:1021" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Internal/ActionTarget.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding>
+            <marker date="1541018838652" expanded="true" signature="27:1122" ph="{...}" />
+            <marker date="1541018838652" expanded="false" signature="40:149" ph="..." />
+            <marker date="1541018838652" expanded="true" signature="189:1120" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="483:1114" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="626:808" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="695:794" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="841:1000" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Internal/ActionTarget`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <marker date="1541018838652" expanded="true" signature="27:2959" ph="{...}" />
+            <marker date="1541018838652" expanded="false" signature="40:172" ph="..." />
+            <marker date="1541018838652" expanded="true" signature="233:2957" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="514:632" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="675:866" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="701:856" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="766:842" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="951:2126" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1051:1172" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1305:1820" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1349:1561" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1582:1806" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1654:1788" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1853:2012" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="2205:2951" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="2363:2830" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="2397:2597" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="2463:2579" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="2634:2816" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Internal/EnumerableExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <marker date="1543691292043" expanded="true" signature="27:320" ph="{...}" />
+            <marker date="1543691292043" expanded="false" signature="40:90" ph="..." />
+            <marker date="1543691292043" expanded="true" signature="136:318" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Internal/Target.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding>
+            <marker date="1543692745638" expanded="true" signature="27:611" ph="{...}" />
+            <marker date="1543692745638" expanded="true" signature="40:124" ph="..." />
+            <marker date="1543692745638" expanded="true" signature="149:609" ph="{...}" />
+            <marker date="1543692745638" expanded="true" signature="224:402" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Internal/OperatingSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <marker date="1541018838652" expanded="true" signature="27:139" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="61:137" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Internal/TargetCollection.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="68" column="66" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
+          <folding>
+            <marker date="1543692745654" expanded="true" signature="27:5798" ph="{...}" />
+            <marker date="1543692745654" expanded="false" signature="40:255" ph="..." />
+            <marker date="1543692745654" expanded="true" signature="324:5796" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="524:1874" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="661:1583" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="714:812" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="1012:1269" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="1290:1569" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="1356:1551" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="1613:1764" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="2087:3366" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="2168:2315" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="2471:2736" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="2753:3032" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="2831:3018" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="3102:3328" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="3424:4500" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="3565:4006" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="3712:3992" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="4055:4490" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="4555:4758" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="4661:4748" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="4843:5379" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="4908:5106" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="5236:5333" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="5430:5790" ph="{...}" />
+            <marker date="1543692745654" expanded="true" signature="5584:5780" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Internal/WindowsConsole.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding>
+            <marker date="1541018838652" expanded="true" signature="27:2454" ph="{...}" />
+            <marker date="1541018838652" expanded="false" signature="40:126" ph="..." />
+            <marker date="1541018838652" expanded="true" signature="166:2452" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="273:2446" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="569:888" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="612:849" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="914:1096" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1180:1533" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1223:1494" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1559:1755" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1895:2214" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1938:2200" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="2240:2436" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Targets.Sync.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding>
+            <marker date="1543692745678" expanded="true" signature="18:960" ph="{...}" />
+            <marker date="1543692745678" expanded="false" signature="31:110" ph="..." />
+            <marker date="1543692745678" expanded="true" signature="151:958" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Internal/Palette.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+          <folding>
+            <marker date="1543692745718" expanded="true" signature="27:5279" ph="{...}" />
+            <marker date="1543692745718" expanded="true" signature="73:5277" ph="{...}" />
+            <marker date="1543692745718" expanded="true" signature="160:4636" ph="{...}" />
+            <marker date="1543692745718" expanded="true" signature="3193:4626" ph="{...}" />
+            <marker date="1543692745718" expanded="true" signature="3641:3738" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullseye/Targets.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <marker date="1541018838652" expanded="true" signature="18:1115" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="31:139" ph="..." />
+            <marker date="1541018838652" expanded="true" signature="180:1113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.nuget/packages/publicapigenerator/8.0.1/contentFiles/cs/any/PublicApiGenerator/ApiGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="403" column="40" selection-start-line="403" selection-start-column="40" selection-end-line="403" selection-end-column="40" />
+          <folding>
+            <marker date="1537679494000" expanded="false" signature="6:439" ph="..." />
+            <marker date="1537679494000" expanded="true" signature="524:41629" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="563:41305" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="876:2249" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="1145:2239" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="1626:1748" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="1750:2225" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="2318:2602" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="2419:2478" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="2612:2739" ph="/* TODO: Assembly references? ... */" />
+            <marker date="1537679494000" expanded="true" signature="2975:4962" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="3101:3279" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="3341:4875" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="3497:3646" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="3924:4536" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="4146:4332" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="4593:4861" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="5020:5122" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="5181:5311" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="5368:5488" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="5589:5736" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="5798:5956" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="6056:6386" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="6560:7567" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="6679:6982" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="7037:7180" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="7232:7368" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="7420:7557" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="7634:9283" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="9442:13349" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="10250:10386" ph="/* Static support is a hack. CodeDOM does support it, and this isn't ... */" />
+            <marker date="1537679494000" expanded="true" signature="10650:11148" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="11478:11959" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="11559:11831" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="13086:13306" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="13473:14969" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="13797:14035" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="14594:14926" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="15038:15180" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="15305:16829" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="15383:16819" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="15582:15755" ph="/* A little hacky. Means we get &quot;in&quot; and &quot;out&quot; prefixed on any constraints, but it's either that ... */" />
+            <marker date="1537679494000" expanded="true" signature="16053:16233" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="16617:16758" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="16981:17178" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="17361:17468" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="17724:18136" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="17954:18126" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="18304:19163" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="18516:18646" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="18725:18878" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="18964:19123" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="19418:20275" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="19488:20265" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="19570:19725" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="19916:20035" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="20092:20251" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="20366:21734" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="21841:22091" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="22193:25378" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="22271:22402" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="22473:22798" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="22987:24742" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="23166:24301" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="23205:23848" ph="/* var allFlags = from f in type.Fields ... */" />
+            <marker date="1537679494000" expanded="true" signature="24817:24941" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="24975:25312" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="25006:25151" ph="/* CodeDOM outputs a verbatim string. Any string with \n is treated as such, so normalise ... */" />
+            <marker date="1537679494000" expanded="true" signature="25521:26008" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="25669:25863" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="26119:26978" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="27124:28307" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="27504:27579" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="27713:27948" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="28379:28534" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="28759:30066" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="28826:30056" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="29380:29523" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="29843:29997" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="30142:30321" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="30399:31515" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="31576:32481" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="31655:31791" ph="/* If we're an interface, just try and find any method with the same signature ... */" />
+            <marker date="1537679494000" expanded="true" signature="31835:32256" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="32559:32905" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="32648:32895" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="33054:35393" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="33769:34185" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="34200:34323" ph="/* Here's a nice hack, because hey, guess what, the CodeDOM doesn't support ... */" />
+            <marker date="1537679494000" expanded="true" signature="34405:34586" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="34668:34849" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="34907:35127" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="35141:35331" ph="/* TODO: CodeDOM has no support for different access modifiers for getters and setters ... */" />
+            <marker date="1537679494000" expanded="true" signature="35518:37475" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="37550:37794" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="37907:38322" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="37975:38283" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="38469:39725" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="39390:39535" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="39805:39896" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="40004:40186" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="40264:40412" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="40467:40800" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="40585:40719" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="40879:41299" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="41141:41242" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="41331:41627" ph="{...}" />
+            <marker date="1537679494000" expanded="true" signature="41427:41621" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BullseyeTests/Dependencies.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <marker date="1541018838652" expanded="true" signature="23:12431" ph="{...}" />
+            <marker date="1541018838652" expanded="false" signature="36:250" ph="..." />
+            <marker date="1541018838652" expanded="true" signature="281:12429" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="408:1469" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="1593:2688" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="2810:3635" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="3737:4317" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="4421:5175" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="5281:6196" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="6328:7453" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="7598:8937" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="9063:9842" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="9975:10845" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="11115:12423" ph="{...}" />
+            <marker date="1541018838652" expanded="true" signature="11309:11520" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
