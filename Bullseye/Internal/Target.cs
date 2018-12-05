@@ -1,15 +1,14 @@
 namespace Bullseye.Internal
 {
     using System.Collections.Generic;
-    using System.Linq;
     using System.Threading.Tasks;
 
     public class Target
     {
-        public Target(string name, IEnumerable<string> dependencies)
+        public Target(string name, List<string> dependencies)
         {
             this.Name = name ?? throw new BullseyeException("Target name cannot be null.");
-            this.Dependencies = dependencies.Sanitize().ToList();
+            this.Dependencies = dependencies;
         }
 
         public string Name { get; }
