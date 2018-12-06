@@ -12,7 +12,7 @@ namespace Bullseye.Internal
     {
         protected override string GetKeyForItem(Target item) => item.Name;
 
-        public async Task RunAsync(List<string> names, bool skipDependencies, bool dryRun, bool parallel, Logger log)
+        public async Task RunAsync(List<TargetName> names, bool skipDependencies, bool dryRun, bool parallel, Logger log)
         {
             await log.Running(names).ConfigureAwait(false);
             var stopWatch = Stopwatch.StartNew();

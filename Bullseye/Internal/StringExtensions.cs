@@ -6,7 +6,10 @@ namespace Bullseye.Internal
 
     public static class StringExtensions
     {
-        public static string Spaced(this IEnumerable<string> strings) => string.Join(" ", strings);
+        public static List<TargetName> SanitizeTargetNames(this IEnumerable<string> names) =>
+            names?.Select(name => (TargetName)name).ToList() ?? new List<TargetName>();
+
+        public static string Spaced(this IEnumerable<TargetName> strings) => string.Join(" ", strings);
 
         public static (List<string>, Options) Parse(this IEnumerable<string> args)
         {

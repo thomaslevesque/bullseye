@@ -11,11 +11,11 @@ namespace Bullseye.Internal
         private readonly Func<TInput, Task> action;
         private readonly IEnumerable<TInput> inputs;
 
-        public ActionTarget(string name, IEnumerable<string> dependencies, IEnumerable<TInput> inputs, Func<TInput, Task> action)
+        public ActionTarget(TargetName name, List<TargetName> dependencies, List<TInput> inputs, Func<TInput, Task> action)
             : base(name, dependencies)
         {
             this.action = action;
-            this.inputs = inputs ?? Enumerable.Empty<TInput>();
+            this.inputs = inputs;
         }
 
         public IEnumerable<object> Inputs
@@ -74,10 +74,7 @@ namespace Bullseye.Internal
             {
                 try
                 {
-                    if (this.action != default)
-                    {
-                        await this.action(input).ConfigureAwait(false);
-                    }
+                    await this.action(input).ConfigureAwait(false);
                 }
                 catch (Exception ex)
                 {

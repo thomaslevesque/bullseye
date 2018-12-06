@@ -14,13 +14,13 @@ namespace Bullseye
         public static TInput[] ForEach<TInput>(params TInput[] inputs) => inputs;
 
         public static void Target(string name, IEnumerable<string> dependsOn) =>
-            targets.Add(new Target(name, dependsOn));
+            targets.Add(new Target((TargetName)name, dependsOn.SanitizeTargetNames()));
 
         public static void Target(string name, IEnumerable<string> dependsOn, Func<Task> action) =>
-            targets.Add(new ActionTarget(name, dependsOn, action));
+            targets.Add(new ActionTarget((TargetName)name, dependsOn.SanitizeTargetNames(), action));
 
         public static void Target<TInput>(string name, IEnumerable<string> dependsOn, IEnumerable<TInput> forEach, Func<TInput, Task> action) =>
-            targets.Add(new ActionTarget<TInput>(name, dependsOn, forEach, action));
+            targets.Add(new ActionTarget<TInput>((TargetName)name, dependsOn.SanitizeTargetNames(), forEach, action));
 
         [Obsolete("Use RunTargetsAndExitAsync(IEnumerable<string> args) instead. This method will be removed in version 3.0.0.")]
         public static Task RunTargetsAsync(IEnumerable<string> args) =>

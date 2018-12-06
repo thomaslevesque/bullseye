@@ -5,15 +5,15 @@ namespace Bullseye.Internal
 
     public class Target
     {
-        public Target(string name, List<string> dependencies)
+        public Target(TargetName name, List<TargetName> dependencies)
         {
             this.Name = name ?? throw new BullseyeException("Target name cannot be null.");
             this.Dependencies = dependencies;
         }
 
-        public string Name { get; }
+        public TargetName Name { get; }
 
-        public List<string> Dependencies { get; }
+        public List<TargetName> Dependencies { get; }
 
         public virtual Task RunAsync(bool dryRun, bool parallel, Logger log) => log.Succeeded(this.Name, null);
     }

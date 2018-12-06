@@ -9,7 +9,7 @@ namespace Bullseye.Internal
     {
         private readonly Func<Task> action;
 
-        public ActionTarget(string name, IEnumerable<string> dependencies, Func<Task> action)
+        public ActionTarget(TargetName name, List<TargetName> dependencies, Func<Task> action)
             : base(name, dependencies) => this.action = action;
 
         public override async Task RunAsync(bool dryRun, bool parallel, Logger log)
@@ -20,7 +20,7 @@ namespace Bullseye.Internal
 
             try
             {
-                if (!dryRun && this.action != default)
+                if (!dryRun)
                 {
                     await this.action().ConfigureAwait(false);
                 }

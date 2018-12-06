@@ -44,7 +44,7 @@ namespace Bullseye.Internal
 
         public Task Usage() => this.console.Out.WriteLineAsync(this.GetUsage());
 
-        public Task Targets(TargetCollection targets, List<string> rootTargets, int maxDepth, int maxDepthToShowInputs, bool listInputs) =>
+        public Task Targets(TargetCollection targets, List<TargetName> rootTargets, int maxDepth, int maxDepthToShowInputs, bool listInputs) =>
             this.console.Out.WriteLineAsync(this.List(targets, rootTargets, maxDepth, maxDepthToShowInputs, listInputs));
 
         public Task Error(string message) => this.console.Out.WriteLineAsync(Message(p.Failed, message));
@@ -57,7 +57,7 @@ namespace Bullseye.Internal
             }
         }
 
-        public async Task Verbose(Stack<string> targets, string message)
+        public async Task Verbose(Stack<TargetName> targets, string message)
         {
             if (this.verbose)
             {
@@ -65,37 +65,37 @@ namespace Bullseye.Internal
             }
         }
 
-        public Task Running(List<string> targets) =>
+        public Task Running(List<TargetName> targets) =>
             this.console.Out.WriteLineAsync(Message(p.Starting, $"Starting...", targets, null));
 
-        public Task Failed(List<string> targets, double elapsedMilliseconds) =>
+        public Task Failed(List<TargetName> targets, double elapsedMilliseconds) =>
             this.console.Out.WriteLineAsync(Message(p.Failed, $"Failed!", targets, elapsedMilliseconds));
 
-        public Task Succeeded(List<string> targets, double elapsedMilliseconds) =>
+        public Task Succeeded(List<TargetName> targets, double elapsedMilliseconds) =>
             this.console.Out.WriteLineAsync(Message(p.Succeeded, $"Succeeded.", targets, elapsedMilliseconds));
 
-        public Task Starting(string target) =>
+        public Task Starting(TargetName target) =>
             this.console.Out.WriteLineAsync(Message(p.Starting, "Starting...", target, null));
 
-        public Task Failed(string target, Exception ex, double elapsedMilliseconds) =>
+        public Task Failed(TargetName target, Exception ex, double elapsedMilliseconds) =>
             this.console.Out.WriteLineAsync(Message(p.Failed, $"Failed! {ex.Message}", target, elapsedMilliseconds));
 
-        public Task Succeeded(string target, double? elapsedMilliseconds) =>
+        public Task Succeeded(TargetName target, double? elapsedMilliseconds) =>
             this.console.Out.WriteLineAsync(Message(p.Succeeded, "Succeeded.", target, elapsedMilliseconds));
 
-        public Task Starting<TInput>(string target, TInput input) =>
+        public Task Starting<TInput>(TargetName target, TInput input) =>
             this.console.Out.WriteLineAsync(Message(p.Starting, "Starting...", target, input, null));
 
-        public Task Failed<TInput>(string target, TInput input, Exception ex, double elapsedMilliseconds) =>
+        public Task Failed<TInput>(TargetName target, TInput input, Exception ex, double elapsedMilliseconds) =>
             this.console.Out.WriteLineAsync(Message(p.Failed, $"Failed! {ex.Message}", target, input, elapsedMilliseconds));
 
-        public Task Succeeded<TInput>(string target, TInput input, double elapsedMilliseconds) =>
+        public Task Succeeded<TInput>(TargetName target, TInput input, double elapsedMilliseconds) =>
             this.console.Out.WriteLineAsync(Message(p.Succeeded, "Succeeded.", target, input, elapsedMilliseconds));
 
-        public Task NoInputs(string target) =>
+        public Task NoInputs(TargetName target) =>
             this.console.Out.WriteLineAsync(Message(p.Warning, "No inputs!", target, null));
 
-        private string List(TargetCollection targets, List<string> rootTargets, int maxDepth, int maxDepthToShowInputs, bool listInputs)
+        private string List(TargetCollection targets, List<TargetName> rootTargets, int maxDepth, int maxDepthToShowInputs, bool listInputs)
         {
             var value = new StringBuilder();
 
@@ -105,12 +105,12 @@ namespace Bullseye.Internal
 
             foreach (var rootTarget in rootTargets)
             {
-                Append(new List<string> { rootTarget }, new Stack<string>(), true, "", 0);
+                Append(new List<TargetName> { rootTarget }, new Stack<string>(), true, "", 0);
             }
 
             return value.ToString();
 
-            void Append(List<string> names, Stack<string> seenTargets, bool isRoot, string previousPrefix, int depth)
+            void Append(List<TargetName> names, Stack<string> seenTargets, bool isRoot, string previousPrefix, int depth)
             {
                 if (depth > maxDepth)
                 {
@@ -171,27 +171,27 @@ namespace Bullseye.Internal
 
         private string Message(string color, string text) => $"{GetPrefix()}{color}{text}";
 
-        private string Message(Stack<string> targets, string color, string text) => $"{GetPrefix(targets)}{color}{text}";
+        private string Message(Stack<TargetName> targets, string color, string text) => $"{GetPrefix(targets)}{color}{text}";
 
-        private string Message(string color, string text, List<string> targets, double? elapsedMilliseconds) =>
+        private string Message(string color, string text, List<TargetName> targets, double? elapsedMilliseconds) =>
             $"{GetPrefix()}{color}{text}{p.Target} ({targets.Spaced()}){p.Default}{GetSuffix(false, elapsedMilliseconds)}";
 
-        private string Message(string color, string text, string target, double? elapsedMilliseconds) =>
+        private string Message(string color, string text, TargetName target, double? elapsedMilliseconds) =>
             $"{GetPrefix(target)}{color}{text}{p.Default}{GetSuffix(true, elapsedMilliseconds)}";
 
-        private string Message<TInput>(string color, string text, string target, TInput input, double? elapsedMilliseconds) =>
+        private string Message<TInput>(string color, string text, TargetName target, TInput input, double? elapsedMilliseconds) =>
             $"{GetPrefix(target, input)}{color}{text}{p.Default}{GetSuffix(true, elapsedMilliseconds)}";
 
         private string GetPrefix() =>
             $"{p.Label}Bullseye{p.Symbol}: {p.Default}";
 
-        private string GetPrefix(Stack<string> targets) =>
+        private string GetPrefix(Stack<TargetName> targets) =>
             $"{p.Label}Bullseye{p.Symbol}/{p.Label}{string.Join($"{p.Symbol}/{p.Label}", targets.Reverse())}{p.Symbol}: {p.Default}";
 
-        private string GetPrefix(string target) =>
+        private string GetPrefix(TargetName target) =>
             $"{p.Label}Bullseye{p.Symbol}/{p.Label}{target}{p.Symbol}: {p.Default}";
 
-        private string GetPrefix<TInput>(string target, TInput input) =>
+        private string GetPrefix<TInput>(TargetName target, TInput input) =>
             $"{p.Label}Bullseye{p.Symbol}/{p.Label}{target}{p.Symbol}/{p.Input}{input}{p.Symbol}: {p.Default}";
 
         private string GetSuffix(bool specific, double? elapsedMilliseconds) =>
