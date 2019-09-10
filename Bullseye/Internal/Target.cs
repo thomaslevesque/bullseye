@@ -21,7 +21,6 @@ namespace Bullseye.Internal
 
         public IBuildContext Context { get; }
 
-        public virtual Task RunAsync(bool dryRun, bool parallel, Logger log, Func<Exception, bool> messageOnly, IBuildContext context) =>
-            log.Succeeded(this.Name, null);
+        public virtual Task RunAsync(bool dryRun, bool parallel, Logger log, Func<Exception, bool> messageOnly, IBuildContext context) => log.Succeeded(this.Name, null);
     }
 }

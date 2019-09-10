@@ -16,8 +16,7 @@ namespace BullseyeTests.Infra
             return ref t;
         }
 
-        public static Target CreateTarget(string name, Action action) =>
-            CreateTarget(name, new string[0], action);
+        public static Target CreateTarget(string name, Action action) => CreateTarget(name, new string[0], action);
 
         public static Target CreateTarget(string name, Action<IBuildContext> action, IBuildContext context) =>
             CreateTarget(name, new string[0], action, context);

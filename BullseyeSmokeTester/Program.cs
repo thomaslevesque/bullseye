@@ -36,9 +36,9 @@ namespace BullseyeSmokeTester
             var bars = new[] { 1, 2 };
 
             Target(
-                    "foo",
+                "foo",
                 ForEach(10, 20, 30),
-                    Task.Delay);
+                Task.Delay);
 
             Target(
                 "bar",
@@ -56,11 +56,7 @@ namespace BullseyeSmokeTester
 
             Target(
                 "combo",
-                foos.SelectMany(foo => bars.Select(bar => new
-                {
-                    foo,
-                    bar
-                })),
+                foos.SelectMany(foo => bars.Select(bar => new { foo, bar })),
                 async o =>
                 {
                     await Task.Delay((4 - o.bar) * 10);
