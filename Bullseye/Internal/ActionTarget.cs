@@ -28,9 +28,13 @@ namespace Bullseye.Internal
                 try
                 {
                     if (this.actionWithContext is null)
+                    {
                         await this.action().Tax();
+                    }
                     else
+                    {
                         await this.actionWithContext(this.Context ?? context).Tax();
+                    }
                 }
 #pragma warning disable CA1031 // Do not catch general exception types
                 catch (Exception ex)

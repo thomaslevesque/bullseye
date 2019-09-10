@@ -1,19 +1,15 @@
-using System.Collections.Generic;
-
 namespace BullseyeSmokeTester
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using Bullseye;
     using static Bullseye.Targets;
-    using IBuildContext = Bullseye.IBuildContext;
 
-    public class TestContext : Bullseye.IBuildContext
+    public class TestContext : IBuildContext
     {
-        public Dictionary<string, object> Items { get; }
-
-        public TestContext() =>
-            Items = new Dictionary<string, object>();
+        public Dictionary<string, object> Items { get; } = new Dictionary<string, object>();
     }
 
     internal class Program

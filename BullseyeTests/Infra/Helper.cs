@@ -4,9 +4,8 @@ namespace BullseyeTests.Infra
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using Bullseye;
     using Bullseye.Internal;
-
-    using IBuildContext = Bullseye.IBuildContext;
 
     internal static class Helper
     {
