@@ -8,23 +8,35 @@ namespace Bullseye.Internal
 
     public static class TargetCollectionExtensions
     {
-        public static Task RunAsync(this TargetCollection targets, IEnumerable<string> args, Func<Exception, bool> messageOnly, string logPrefix) =>
-            RunAsync(targets ?? new TargetCollection(), args.Sanitize().ToList(), messageOnly ?? (_ => false), logPrefix);
-
-        public static Task RunAndExitAsync(this TargetCollection targets, IEnumerable<string> args, Func<Exception, bool> messageOnly, string logPrefix) =>
-            RunAndExitAsync(targets ?? new TargetCollection(), args.Sanitize().ToList(), messageOnly ?? (_ => false), logPrefix);
-
-        private static async Task RunAsync(this TargetCollection targets, List<string> args, Func<Exception, bool> messageOnly, string logPrefix)
+        public static Task RunAsync(this TargetCollection targets, IEnumerable<string> args, Func<Exception, bool> messageOnly, string logPrefix)
         {
-            var (names, options) = args.Parse();
+            var argList = args.Sanitize().ToList();
+            var (names, options) = argList.Parse();
+            return RunAsync(targets ?? new TargetCollection(), names, options, argList, messageOnly ?? (_ => false), logPrefix);
+        }
+
+        public static Task RunAndExitAsync(this TargetCollection targets, IEnumerable<string> args, Func<Exception, bool> messageOnly, string logPrefix)
+        {
+            var argList = args.Sanitize().ToList();
+            var (names, options) = argList.Parse();
+            return RunAndExitAsync(targets ?? new TargetCollection(), names, options, argList, messageOnly ?? (_ => false), logPrefix);
+        }
+
+        public static Task RunAsync(this TargetCollection targets, IEnumerable<string> names, IEnumerable<(string, bool)> options, Func<Exception, bool> messageOnly, string logPrefix) =>
+            RunAsync(targets ?? new TargetCollection(), names.Sanitize().ToList(), options.ToOptions(), null, messageOnly ?? (_ => false), logPrefix);
+
+        public static Task RunAndExitAsync(this TargetCollection targets, IEnumerable<string> names, IEnumerable<(string, bool)> options, Func<Exception, bool> messageOnly, string logPrefix) =>
+            RunAndExitAsync(targets ?? new TargetCollection(), names.Sanitize().ToList(), options.ToOptions(), null, messageOnly ?? (_ => false), logPrefix);
+
+        private static async Task RunAsync(this TargetCollection targets, List<string> names, Options options, List<string> args, Func<Exception, bool> messageOnly, string logPrefix)
+        {
             var (output, log) = await ConsoleExtensions.Initialize(options, logPrefix).Tax();
 
             await RunAsync(targets, names, options, output, log, messageOnly, args).Tax();
         }
 
-        private static async Task RunAndExitAsync(this TargetCollection targets, List<string> args, Func<Exception, bool> messageOnly, string logPrefix)
+        private static async Task RunAndExitAsync(this TargetCollection targets, List<string> names, Options options, List<string> args, Func<Exception, bool> messageOnly, string logPrefix)
         {
-            var (names, options) = args.Parse();
             var (output, log) = await ConsoleExtensions.Initialize(options, logPrefix).Tax();
 
             try
@@ -51,7 +63,10 @@ namespace Bullseye.Internal
                 throw new InvalidUsageException($"Unknown option{(options.UnknownOptions.Count > 1 ? "s" : "")} {options.UnknownOptions.Spaced()}. \"--help\" for usage.");
             }
 
-            await log.Verbose($"Args: {string.Join(" ", args)}").Tax();
+            if (args != null)
+            {
+                await log.Verbose($"Args: {string.Join(" ", args)}").Tax();
+            }
 
             if (options.ShowHelp)
             {

@@ -22,6 +22,13 @@ dotnet run -c Release --no-build -p BullseyeSmokeTester -- --dry-run --skip-depe
 dotnet run -c Release --no-build -p BullseyeSmokeTester -- --verbose || goto :error
 dotnet run -c Release --no-build -p BullseyeSmokeTester -- -h --verbose || goto :error
 dotnet run -c Release --no-build -p BullseyeSmokeTester -- -h --verbose --no-color || goto :error
+
+REM blocked by https://github.com/dotnet/command-line-api/pull/611
+REM dotnet run -c Release --no-build -p BullseyeSmokeTester.SystemCommandLine -- --help || goto :error
+REM dotnet run -c Release --no-build -p BullseyeSmokeTester.SystemCommandLine -- --foo bar build --verbose || goto :error
+
+dotnet run -c Release --no-build -p BullseyeSmokeTester.McMasterExtensions -- --help || goto :error
+dotnet run -c Release --no-build -p BullseyeSmokeTester.McMasterExtensions -- --foo bar build --verbose || goto :error
 @echo Off
 
 goto :EOF

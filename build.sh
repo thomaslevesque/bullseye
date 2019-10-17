@@ -24,3 +24,9 @@ dotnet run -c Release --no-build -p BullseyeSmokeTester -- --dry-run --skip-depe
 dotnet run -c Release --no-build -p BullseyeSmokeTester -- --verbose
 dotnet run -c Release --no-build -p BullseyeSmokeTester -- -h --verbose
 dotnet run -c Release --no-build -p BullseyeSmokeTester -- -h --verbose --no-color
+
+dotnet run -c Release --no-build -p BullseyeSmokeTester.SystemCommandLine -- --help
+dotnet run -c Release --no-build -p BullseyeSmokeTester.SystemCommandLine -- --foo bar build --verbose
+
+dotnet run -c Release --no-build -p BullseyeSmokeTester.McMasterExtensions -- --help
+dotnet run -c Release --no-build -p BullseyeSmokeTester.McMasterExtensions -- --foo bar build --verbose
