@@ -1,4 +1,4 @@
-namespace BullseyeSmokeTester.SystemCommandLine
+namespace BullseyeSmokeTestExperimental
 {
     using System.CommandLine;
     using System.CommandLine.Invocation;

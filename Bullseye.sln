@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BullseyeTests", "BullseyeTe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BullseyeSmokeTester", "BullseyeSmokeTester\BullseyeSmokeTester.csproj", "{B14FA656-DBFE-4755-8997-2F58FCBCDC28}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BullseyeSmokeTester.McMasterExtensions", "BullseyeSmokeTester.McMasterExtensions\BullseyeSmokeTester.McMasterExtensions.csproj", "{567C97C3-CABA-477F-B54A-923F2BF5A28F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BullseyeSmokeTestMcMaster", "BullseyeSmokeTestMcMaster\BullseyeSmokeTestMcMaster.csproj", "{567C97C3-CABA-477F-B54A-923F2BF5A28F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BullseyeSmokeTester.SystemCommandLine", "BullseyeSmokeTester.SystemCommandLine\BullseyeSmokeTester.SystemCommandLine.csproj", "{D6229B05-94BB-46F7-944E-92C53C441D11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BullseyeSmokeTestExperimental", "BullseyeSmokeTestExperimental\BullseyeSmokeTestExperimental.csproj", "{D6229B05-94BB-46F7-944E-92C53C441D11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

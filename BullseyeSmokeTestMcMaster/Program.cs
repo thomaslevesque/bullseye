@@ -1,4 +1,4 @@
-namespace BullseyeSmokeTester.McMasterExtensions
+namespace BullseyeSmokeTestMcMaster
 {
     using System.Linq;
     using McMaster.Extensions.CommandLineUtils;
